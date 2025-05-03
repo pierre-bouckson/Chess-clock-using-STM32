@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "KiCad")(type "KiCad")(uri "C:/KiCad 8.0/Library/TDSG3160-M/KiCad.pretty")(options "")(descr ""))
+)
