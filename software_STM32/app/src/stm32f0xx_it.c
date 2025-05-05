@@ -125,29 +125,6 @@ void EXTI0_1_IRQHandler(void)
 	}
 }
 
-void EXTI4_15_IRQHandler(void)
-{
-	// Test for line 1 pending interrupt
-	if ((EXTI->PR & EXTI_PR_PR4_Msk) != 0)
-	{
-		// Clear pending bit 0 by writing a '1'
-		EXTI->PR = EXTI_PR_PR4;
-
-		button_irqPA4 = 1;
-	}
-}
-
-void EXTI2_3_IRQHandler(void)
-{
-	// Test for line 1 pending interrupt
-	if ((EXTI->PR & EXTI_PR_PR3_Msk) != 0)
-	{
-		// Clear pending bit 0 by writing a '1'
-		EXTI->PR = EXTI_PR_PR3;
-
-		button_irqPC3 = 1;
-	}
-}
 
  //* This function handles TIM6 interrupts
 
